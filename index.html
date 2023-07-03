@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tênis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho do catálogo -->
+    <h1>Catálogo de Tênis</h1>
+
+    <!-- Container para exibir os produtos -->
+    <div class="catalog">
+        <!-- Produto 1: Tênis Nike -->
+        <div class="product" onclick="showDetails('nike')">
+            <img src="nike_tenis.png" alt="Tênis Nike">
+            <h2>Tênis Nike</h2>
+            <p>R$ 299,99</p>
+        </div>
+        <!-- Produto 2: Tênis Adidas -->
+        <div class="product" onclick="showDetails('adidas')">
+            <img src="adidas_tenis.png" alt="Tênis Adidas">
+            <h2>Tênis Adidas</h2>
+            <p>R$ 249,99</p>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+    </div>
+
+    <!-- Janela modal para exibir detalhes do produto -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Botão de fechamento da janela modal -->
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Título do produto na janela modal -->
+            <h2 id="modal-title"></h2>
+            <!-- Imagem do produto na janela modal -->
+            <img id="modal-image" src="" alt="">
+            <!-- Preço do produto na janela modal -->
+            <p id="modal-price"></p>
+            <!-- Botão de compra na janela modal -->
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <!-- Script para manipular a janela modal -->
+    <script src="script.js"></script>
+</body>
+</html>
